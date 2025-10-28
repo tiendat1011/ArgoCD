@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: uv-fastapi
+spec:
+  selector:
+    matchLabels:
+      app: uv-fastapi
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: uv-fastapi
+    spec:
+      containers:
+      - name: uv-fastapi
+        image: tiendat1011/uv-fastapi
+        imagePullPolicy: Always
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8080

@@ -1,0 +1,14 @@
+apiVersion:
+kind: Kustomization
+
+resources:
+  - ../../base
+
+commonLabels:
+  env: staging
+namespace: staging
+
+patches:
+  - path: infisical-patch.yaml
+    target:
+      kind: InfisicalSecret

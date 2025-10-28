@@ -1,0 +1,9 @@
+resources:
+  - ../../base
+
+labels:
+  - pairs:
+      env: staging
+    includeTemplates: true
+    includeSelectors: true
+namespace: staging

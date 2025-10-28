@@ -1,0 +1,15 @@
+- op: replace
+  path: /spec/authentication/universalAuth/credentialsRef/secretNamespace
+  value: staging
+
+- op: replace
+  path: /spec/authentication/universalAuth/secretsScope/envSlug
+  value: staging
+
+- op: replace
+  path: /spec/managedKubeSecretReferences/0/secretName
+  value: uv-fastapi-staging-secrets
+
+- op: replace
+  path: /spec/managedKubeSecretReferences/0/secretNamespace
+  value: staging

@@ -1,0 +1,15 @@
+- op: replace
+  path: /spec/authentication/universalAuth/credentialsRef/secretNamespace
+  value: prod
+
+- op: replace
+  path: /spec/authentication/universalAuth/secretsScope/envSlug
+  value: prod
+
+- op: replace
+  path: /spec/managedKubeSecretReferences/0/secretName
+  value: uv-fastapi-prod-secrets
+
+- op: replace
+  path: /spec/managedKubeSecretReferences/0/secretNamespace
+  value: prod

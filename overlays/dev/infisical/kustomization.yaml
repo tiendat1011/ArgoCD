@@ -1,0 +1,17 @@
+apiVersion:
+kind: Kustomization
+
+resources:
+  - ../../base
+
+labels:
+  - pairs:
+      env: dev
+    includeSelectors: true  
+    includeTemplates: true  
+namespace: dev
+
+patches:
+  - path: infisical-patch.yaml
+    target:
+      kind: InfisicalSecret

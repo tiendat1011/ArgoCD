@@ -1,0 +1,14 @@
+apiVersion:
+kind: Kustomization
+
+resources:
+  - ../../base
+
+commonLabels:
+  env: prod
+namespace: prod
+
+patches:
+  - path: infisical-patch.yaml
+    target:
+      kind: InfisicalSecret

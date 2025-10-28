@@ -1,0 +1,18 @@
+labels:
+  - pairs:
+      env: dev
+    includeTemplates: true
+    includeSelectors: true
+namespace: dev
+
+images:
+  - name: tiendat1011/uv-fastapi
+    newTag: f87a1557
+
+resources:
+  - ../../base
+
+patches:
+  - path: inject-secret.yaml
+    target:
+      kind: Deployment
