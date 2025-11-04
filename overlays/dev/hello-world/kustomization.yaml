@@ -15,4 +15,4 @@ resources:
 patches:
   - path: inject-secret.yaml
     target:
-      kind: Deployment
+      kind: Deployment 
