@@ -1,5 +1,5 @@
 resources:
-  - ../../base
+  - ../../../base
 
 labels:
   - pairs:
@@ -7,3 +7,9 @@ labels:
     includeTemplates: true
     includeSelectors: true
 namespace: staging
+
+
+patches:
+  - path: inject-secret.yaml
+    target:
+      kind: Deployment

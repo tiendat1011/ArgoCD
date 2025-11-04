@@ -10,7 +10,7 @@ images:
     newTag: f87a1557
 
 resources:
-  - ../../base
+  - ../../../base
 
 patches:
   - path: inject-secret.yaml
