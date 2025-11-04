@@ -17,3 +17,9 @@ patches:
   - path: inject-secret.yaml
     target:
       kind: Deployment
+  - patch: |-
+      - op: replace
+        path: /spec/port/0/nodePort
+        value: 31700
+    target:
+      kind: Service
