@@ -8,6 +8,10 @@ labels:
     includeSelectors: true
 namespace: staging
 
+images:
+  - name: tiendat1011/uv-fastapi
+    newTag: f87a1557
+
 
 patches:
   - path: inject-secret.yaml
