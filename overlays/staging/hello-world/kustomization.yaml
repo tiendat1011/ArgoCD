@@ -19,7 +19,7 @@ patches:
       kind: Deployment
   - patch: |-
       - op: replace
-        path: /spec/port/0/nodePort
+        path: /spec/ports/0/nodePort
         value: 31700
     target:
       kind: Service
