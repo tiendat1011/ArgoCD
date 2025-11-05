@@ -20,6 +20,6 @@ patches:
   - patch: |-
       - op: replace
         path: /spec/ports/0/nodePort
-        value: 32500
+        value: 31700
     target:
       kind: Service
